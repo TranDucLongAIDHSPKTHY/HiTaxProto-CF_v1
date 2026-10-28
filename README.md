@@ -38,7 +38,8 @@ tests/              python -m pytest
 2. Model and protocol audits: `tools/protocol/audit_models.py`, `audit_protocol.py`; `python -m pytest`.
 3. Pilot (validation only): `run_queue.py plans/pilot_<dataset>_phase1.json` → `select_config.py` (reference
    LightGCN) → `make_pilot_phase2.py` → `run_queue.py plans/pilot_<dataset>_phase2.json` → `select_config.py` per
-   source → `pilot_decision.py`.
+   arm → `pilot_decision.py`; gate distribution by degree band: `tools/analysis/export_gates.py` per gated arm.
+   yelp2018 first, then amazon-book.
 4. Main experiments (validation only) → selection → `tools/protocol/freeze_protocol.py`.
 5. Sealed test once: `tools/protocol/eval_test.py`, then `tools/analysis/analyze_test.py`.
 

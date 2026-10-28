@@ -46,6 +46,10 @@ uniform negative per interaction, early stopping with patience 20 and an epoch c
 | SimGCL | eps ∈ {0.05, 0.1, 0.2} × tau ∈ {0.1, 0.2} (cl_lambda = 0.5) | 6 |
 | LAGCL | official implementation, 6 configurations declared before freezing | 6 |
 
+Gated arms of the main comparison on every main dataset: DegreeGate and GlobalGate × {taxonomy, shuffled, global}
+(main family, section 5); DegreeGate-kmeans (exploratory); DegreeContentGate-taxonomy (secondary); DegreeGate-taxonomy
+self-inclusive (ablation: the selected configuration of DegreeGate-taxonomy, final seeds only).
+
 Seeds: tuning 42, 0; final 42, 0, 1, 2, 3 (pilot: 42, 0, 1). The k-th shuffled-label seed (101–105) is paired with the
 k-th training seed. Selection rule (every model except the reference): highest validation endpoint (section 5) among
 configurations whose validation Overall Recall@20 ≥ 99.5% of the reference; otherwise the best Overall, reported as
@@ -65,14 +69,18 @@ TF-LightGCN, NCL+Taxonomy and NCL are never removed. Runs are executed one at a 
 
 ## 4. Pilot (validation only)
 
-Datasets: yelp2018 first; amazon-book only after the Yelp decision. Arms: reference LightGCN (6 configurations);
-DegreeGate × {taxonomy, shuffled, global} and GlobalGate-taxonomy, b_init ∈ {−1, 0, 1}; seeds 42, 0, 1. The validation
-users are split once into a selection half (early stopping, configuration choice, reference value) and an assessment
-half evaluated once per run on its selected checkpoint.
+Datasets: yelp2018, then amazon-book. On amazon-book the reference LightGCN is run first; its runs also measure
+convergence (epoch of the selected checkpoint, time per epoch), from which the gated runs of amazon-book and any
+declared reduction (section 3) are fixed before they start. Arms: reference LightGCN (6 configurations); DegreeGate and
+GlobalGate × {taxonomy, shuffled, global}, b_init ∈ {−1, 0, 1}; seeds 42, 0, 1. The validation users are split once
+into a selection half (early stopping, configuration choice, reference value) and an assessment half evaluated once
+per run on its selected checkpoint. Also measured for every gated run: the gate distribution by degree band at the
+selected checkpoint (`tools/analysis/export_gates.py`); for every run: time and peak GPU memory.
 
 Pass on a dataset (assessment half): relative difference of the endpoint (section 5), DegreeGate-taxonomy vs
 DegreeGate-shuffled, ≥ +1%; two-level (seed × user) 95% CI excluding 0; positive for all three seeds; Overall Recall@20
-of DegreeGate-taxonomy ≥ 99% of the reference (screening only). If no dataset passes: stop, analyse (label coverage,
+of DegreeGate-taxonomy ≥ 99% of the reference (screening only). The pilot passes if at least one of yelp2018 and
+amazon-book passes. If no dataset passes: stop, analyse (label coverage,
 node sizes, gate distribution by degree, strata, taxonomy vs K-means), do not add modules, and re-frame as a controlled
 study of when fusion helps.
 
@@ -111,3 +119,4 @@ Any change to sections 1–6 made before the protocol is frozen is listed here w
 
 | Date | Change | Reason |
 |---|---|---|
+| 2026-10-28 | Sections 3–4: GlobalGate × {shuffled, global} added to the pilot and to the main comparison; the gated arms are listed explicitly; pilot on amazon-book after yelp2018, its gated runs fixed from the measured convergence of the reference; gate distribution measured in the pilot. Made before any pilot run. | GlobalGate is evaluated against the same controls as DegreeGate |

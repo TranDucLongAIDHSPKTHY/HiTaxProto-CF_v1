@@ -1,8 +1,8 @@
 """Write the phase-2 plan of a pilot from the phase-1 selection of the reference LightGCN.
 
 Reads results/selection/pilot__<dataset>__LightGCN.json (validation Overall Recall@20 on the SELECTION half, mean over
-seeds 42, 0, 1) and writes plans/pilot_<dataset>_phase2.json: DegreeGate x {taxonomy, shuffled, global} and
-GlobalGate x taxonomy, b_init in {-1, 0, 1}, seeds 42, 0, 1. Every run takes --reference_selection (each seed is held
+seeds 42, 0, 1) and writes plans/pilot_<dataset>_phase2.json: DegreeGate and GlobalGate x {taxonomy, shuffled,
+global}, b_init in {-1, 0, 1}, seeds 42, 0, 1. Every run takes --reference_selection (each seed is held
 to the validation Overall of the reference run of the same seed) and inherits the reference's split seed, (lr, reg)
 and adjacency layout.
 
@@ -19,7 +19,7 @@ if str(ROOT) not in sys.path:
 
 from config_path.config_path import MODEL_OUTPUT_DIR, PROJECT_ROOT, RESULT_DIR  # noqa: E402
 
-ARMS = (("degree", "taxonomy"), ("degree", "shuffled"), ("degree", "global"), ("global", "taxonomy"))
+ARMS = tuple((gate, source) for gate in ("degree", "global") for source in ("taxonomy", "shuffled", "global"))
 B_INIT = ("-1", "0", "1")
 
 

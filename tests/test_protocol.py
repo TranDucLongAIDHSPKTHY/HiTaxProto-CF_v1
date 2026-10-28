@@ -134,7 +134,9 @@ def test_pilot_phase2_plan_and_input_checks(wired, monkeypatch):
     ref = json.loads((root / "results/selection/pilot__tiny__LightGCN.json").read_text(encoding="utf-8"))
     assert mp.main(["--dataset", "tiny"]) == 0
     plan = json.loads((root / "plans/pilot_tiny_phase2.json").read_text(encoding="utf-8"))
-    assert len(plan["runs"]) == 12
+    assert len(plan["runs"]) == 18
+    arms = {(a[a.index("--gate") + 1], a[a.index("--source") + 1]) for a in plan["runs"]}
+    assert arms == {(g, s) for g in ("degree", "global") for s in ("taxonomy", "shuffled", "global")}
     for args in plan["runs"]:
         assert args[args.index("--reference_selection") + 1] == "pilot__tiny__LightGCN.json"
         assert args[args.index("--seeds") + 1: args.index("--seeds") + 4] == ["42", "0", "1"]
