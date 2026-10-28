@@ -1,0 +1,23 @@
+# NCL defaults follow the official repository (RUCAIBox/NCL properties/*.yaml): amazon-books alpha = 0.8, yelp alpha = 1.5
+dataset = amazon-book
+split_seed = 2026
+item_groups = kmeans
+K = 3
+dim = 64
+init_std = 0.1
+adj_layout = csr
+lr = 0.001
+batch_size = 2048
+reg = 0.0001
+ssl_lambda = 1e-06
+proto_lambda = 1e-07
+alpha = 0.8
+temperature = 0.05
+hyper_layers = 1
+num_clusters = 2000
+warm_up = 20
+epochs = 1000
+patience = 20
+delta_sel = 0.005
+ks = [10, 20]
+selection_k = 20

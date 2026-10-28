@@ -1,0 +1,41 @@
+{
+  "datasets": {
+    "amazon-book/2026": {
+      "interactions_sha256": "9a9ff19f68ad5f272d5adb5bdbd7ca18a17aefd6aafd56d2f51995d22ae8b7b5",
+      "role": "development",
+      "sealed_test_sha256": "bf38d8325285338f1c66867f724a0e4501216b9392f32f11d6aeeb4e10699d92",
+      "test_rows": 576977
+    },
+    "amazon2018-grocery/2026": {
+      "interactions_sha256": "3a179ccc1b4369695bb655122ddef9e6043a6d67b984a5aa64c98d505e91b2b7",
+      "role": "confirmation",
+      "sealed_test_sha256": "3d18f82020d4c6cdc8ed41d192cdefbd65e4c662eb52e7d5ae0ef4ce8ccd4c97",
+      "test_rows": 171652
+    },
+    "ml-1m/1": {
+      "interactions_sha256": "8f3667b81af6f44e0923f729f53e54a4364c64601ab94e725b742392f9ea0e1f",
+      "role": "secondary",
+      "sealed_test_sha256": "0780e6058f8c252adaebc3b021425e29ab57c3eddf31af05391364120fecba28",
+      "test_rows": 197656
+    },
+    "ml-1m/2": {
+      "interactions_sha256": "8369a615b22b690280f088eb33208f753debf283026e48f78cc6d3e59ceceb4c",
+      "role": "secondary",
+      "sealed_test_sha256": "c9d83a1b025a18646f9c128621641d082c4d32ad47c242db30e45fef761eeb43",
+      "test_rows": 197656
+    },
+    "ml-1m/3": {
+      "interactions_sha256": "21c01445a66ec43a41054ebef6a7d308d3c7665efc332202fce985199ce2b0d1",
+      "role": "secondary",
+      "sealed_test_sha256": "d0ceed5f01630c6440b246e5de8d278d2f8da6847bf90f0e64651ae8c0cb236d",
+      "test_rows": 197656
+    },
+    "yelp2018/2026": {
+      "interactions_sha256": "69e0825cd4d2b3651f59454711215ac073a99d469525d64c17c2f616b8a66a13",
+      "role": "development",
+      "sealed_test_sha256": "a592bd12c3c14f09024b12ba8363fd622916931fba446b941c276e4ca851e678",
+      "test_rows": 300413
+    }
+  },
+  "recorded_at_utc": "2026-10-26T10:38:16.822551+00:00"
+}

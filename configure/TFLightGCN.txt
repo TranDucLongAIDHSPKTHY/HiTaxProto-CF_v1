@@ -1,0 +1,14 @@
+dataset = amazon-book
+split_seed = 2026
+K = 3
+dim = 64
+init_std = 0.1
+adj_layout = csr
+lr = 0.001
+batch_size = 2048
+reg = 0.0001
+epochs = 1000
+patience = 20
+delta_sel = 0.005
+ks = [10, 20]
+selection_k = 20

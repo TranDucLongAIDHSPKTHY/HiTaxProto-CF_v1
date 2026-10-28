@@ -1,0 +1,41 @@
+{
+  "dataset": "amazon-book",
+  "split_seed": 2026,
+  "policy": "first_informative",
+  "kindle": "drop_if_books",
+  "release_of_item": {
+    "2018": 54583,
+    "2014": 21528,
+    "2023": 15488
+  },
+  "kindle_paths_dropped_items": 19494,
+  "yelp_unmatched_titles": null,
+  "share_train_items_with_valid_label": 1.0,
+  "share_long_tail_items_with_valid_label": 1.0,
+  "share_long_tail_items_with_informative_label": 1.0,
+  "labels_removed_by_reduction": 0,
+  "labels_lifted": 461,
+  "labels_dropped": 3,
+  "lift_rounds": 4,
+  "valid_nodes_K": 1058,
+  "taxonomy_nodes": 1559,
+  "nodes_with_more_than_one_parent": 0,
+  "max_depth": 7,
+  "mean_valid_labels_per_train_item": 1.306193299053483,
+  "share_multilabel_train_items": 0.183899387547899,
+  "node_size_quantiles_25_50_75": [
+    3.0,
+    8.0,
+    38.75
+  ],
+  "largest_valid_node": [
+    "Books > Literature & Fiction > Genre Fiction",
+    9745
+  ],
+  "measured_type": "forest of trees (full-path identity), multi-label",
+  "checks": {
+    "train_items_labelled_>=90%": true,
+    "long_tail_items_labelled_>=90%": true
+  },
+  "fuse_mask_size": 91599
+}

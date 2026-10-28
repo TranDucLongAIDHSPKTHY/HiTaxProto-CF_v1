@@ -1,0 +1,77 @@
+{
+ "lightgcn_propagation": {
+  "checks": 15,
+  "failures": 0,
+  "examples": []
+ },
+ "lightgcn_l2": {
+  "checks": 5,
+  "failures": 0,
+  "examples": []
+ },
+ "prototype": {
+  "checks": 10,
+  "failures": 0,
+  "examples": []
+ },
+ "fusion": {
+  "checks": 15,
+  "failures": 0,
+  "examples": []
+ },
+ "bpr": {
+  "checks": 15,
+  "failures": 0,
+  "examples": []
+ },
+ "degree_gate_monotone": {
+  "checks": 5,
+  "failures": 0,
+  "examples": []
+ },
+ "stop_gradient": {
+  "checks": 5,
+  "failures": 0,
+  "examples": []
+ },
+ "ancestor_mean": {
+  "checks": 5,
+  "failures": 0,
+  "examples": []
+ },
+ "tf_lightgcn": {
+  "checks": 5,
+  "failures": 0,
+  "examples": []
+ },
+ "tf_lightgcn_l2": {
+  "checks": 5,
+  "failures": 0,
+  "examples": []
+ },
+ "simgcl_propagation": {
+  "checks": 5,
+  "failures": 0,
+  "examples": []
+ },
+ "simgcl_noise": {
+  "checks": 5,
+  "failures": 0,
+  "examples": []
+ },
+ "simgcl_infonce": {
+  "checks": 5,
+  "failures": 0,
+  "examples": []
+ },
+ "evaluator": {
+  "checks": 15,
+  "failures": 0,
+  "examples": []
+ },
+ "ncl_objective": {
+  "checks": 10,
+  "failures": 0,
+  "examples": []
+ }
+}

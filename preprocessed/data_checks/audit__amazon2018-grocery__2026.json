@@ -1,0 +1,52 @@
+{
+ "dataset": "amazon2018-grocery",
+ "seed": 2026,
+ "spot_items": 40,
+ "results": {
+  "maps": {
+   "checks": 4,
+   "failures": 0,
+   "examples": []
+  },
+  "sealed": {
+   "checks": 3,
+   "failures": 0,
+   "examples": []
+  },
+  "raw": {
+   "checks": 2,
+   "failures": 0,
+   "examples": []
+  },
+  "split": {
+   "checks": 227184,
+   "failures": 0,
+   "examples": []
+  },
+  "degree": {
+   "checks": 39505,
+   "failures": 0,
+   "examples": []
+  },
+  "labels": {
+   "checks": 157890,
+   "failures": 0,
+   "examples": []
+  },
+  "ancestor": {
+   "checks": 235725,
+   "failures": 0,
+   "examples": []
+  },
+  "shuffled": {
+   "checks": 50,
+   "failures": 0,
+   "examples": []
+  },
+  "spot": {
+   "checks": 40,
+   "failures": 0,
+   "examples": []
+  }
+ }
+}

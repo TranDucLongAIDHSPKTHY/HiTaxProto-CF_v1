@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+
+# data: not distributed, rebuilt by tools/data (patterns anchored at the repository root)
+/dataset/
+/dataset_verify/
+/metadata/
+
+# run outputs (checkpoints and per-user arrays stay local; small JSON reports under results/ are kept)
+/log/
+/runs/
+/results/per_user/
+/results/gates/
+/results/ncl_parity/recbole_data/
+/results/ncl_parity/recbole_ckpt/
+/results/ncl_parity/recbole_run/
+/log_queue_*
+*.pt
+*.out
+*.part
+*.tmp
+
+# separate environment of the official NCL implementation
+/third_party/recbole_env/

@@ -1,0 +1,52 @@
+{
+ "dataset": "yelp2018",
+ "seed": 2026,
+ "spot_items": 40,
+ "results": {
+  "maps": {
+   "checks": 4,
+   "failures": 0,
+   "examples": []
+  },
+  "sealed": {
+   "checks": 3,
+   "failures": 0,
+   "examples": []
+  },
+  "raw": {
+   "checks": 2,
+   "failures": 0,
+   "examples": []
+  },
+  "split": {
+   "checks": 63336,
+   "failures": 0,
+   "examples": []
+  },
+  "degree": {
+   "checks": 38049,
+   "failures": 0,
+   "examples": []
+  },
+  "labels": {
+   "checks": 364578,
+   "failures": 0,
+   "examples": []
+  },
+  "ancestor": {
+   "checks": 226665,
+   "failures": 0,
+   "examples": []
+  },
+  "shuffled": {
+   "checks": 230,
+   "failures": 0,
+   "examples": []
+  },
+  "spot": {
+   "checks": 40,
+   "failures": 0,
+   "examples": []
+  }
+ }
+}

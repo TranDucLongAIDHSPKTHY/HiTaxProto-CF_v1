@@ -1,0 +1,38 @@
+{
+  "dataset": "amazon-book",
+  "split_seed": 2026,
+  "policy": "earliest_release",
+  "kindle": "drop_if_books",
+  "release_of_item": {
+    "2014": 91599
+  },
+  "kindle_paths_dropped_items": 19494,
+  "yelp_unmatched_titles": null,
+  "share_train_items_with_valid_label": 1.0,
+  "share_long_tail_items_with_valid_label": 1.0,
+  "share_long_tail_items_with_informative_label": 0.2617588932806324,
+  "labels_removed_by_reduction": 0,
+  "labels_lifted": 467,
+  "labels_dropped": 3,
+  "lift_rounds": 4,
+  "valid_nodes_K": 865,
+  "taxonomy_nodes": 1397,
+  "nodes_with_more_than_one_parent": 0,
+  "max_depth": 7,
+  "mean_valid_labels_per_train_item": 1.3059858732082228,
+  "share_multilabel_train_items": 0.18375746460114192,
+  "node_size_quantiles_25_50_75": [
+    3.0,
+    5.0,
+    16.0
+  ],
+  "largest_valid_node": [
+    "Books",
+    72093
+  ],
+  "measured_type": "forest of trees (full-path identity), multi-label",
+  "checks": {
+    "train_items_labelled_>=90%": true,
+    "long_tail_items_labelled_>=90%": true
+  }
+}

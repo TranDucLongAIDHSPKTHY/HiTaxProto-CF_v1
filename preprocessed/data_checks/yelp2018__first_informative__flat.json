@@ -1,0 +1,39 @@
+{
+  "dataset": "yelp2018",
+  "split_seed": 2026,
+  "policy": "first_informative",
+  "kindle": null,
+  "release_of_item": {
+    "2018": 36720,
+    "none": 1328
+  },
+  "kindle_paths_dropped_items": null,
+  "yelp_unmatched_titles": null,
+  "share_train_items_with_valid_label": 0.9650967199327166,
+  "share_long_tail_items_with_valid_label": 0.9515803013597942,
+  "share_long_tail_items_with_informative_label": 0.9509371554575524,
+  "labels_removed_by_reduction": 0,
+  "labels_lifted": 0,
+  "labels_dropped": 145,
+  "lift_rounds": 1,
+  "valid_nodes_K": 843,
+  "taxonomy_nodes": 988,
+  "nodes_with_more_than_one_parent": 0,
+  "max_depth": 1,
+  "mean_valid_labels_per_train_item": 4.024994743481917,
+  "share_multilabel_train_items": 0.9639928511354079,
+  "node_size_quantiles_25_50_75": [
+    6.0,
+    20.0,
+    80.5
+  ],
+  "largest_valid_node": [
+    "Restaurants",
+    22710
+  ],
+  "measured_type": "flat multi-label",
+  "checks": {
+    "train_items_labelled_>=90%": true,
+    "long_tail_items_labelled_>=90%": true
+  }
+}

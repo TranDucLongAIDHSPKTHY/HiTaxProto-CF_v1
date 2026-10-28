@@ -1,0 +1,39 @@
+{
+  "dataset": "ml-1m",
+  "split_seed": 3,
+  "policy": "first_informative",
+  "kindle": null,
+  "release_of_item": {
+    "genres": 3706
+  },
+  "kindle_paths_dropped_items": null,
+  "yelp_unmatched_titles": null,
+  "share_train_items_with_valid_label": 1.0,
+  "share_long_tail_items_with_valid_label": 1.0,
+  "share_long_tail_items_with_informative_label": 1.0,
+  "labels_removed_by_reduction": 0,
+  "labels_lifted": 0,
+  "labels_dropped": 0,
+  "lift_rounds": 0,
+  "valid_nodes_K": 18,
+  "taxonomy_nodes": 18,
+  "nodes_with_more_than_one_parent": 0,
+  "max_depth": 1,
+  "mean_valid_labels_per_train_item": 1.6746790494400436,
+  "share_multilabel_train_items": 0.4941272876263316,
+  "node_size_quantiles_25_50_75": [
+    106.0,
+    222.5,
+    426.75
+  ],
+  "largest_valid_node": [
+    "Drama",
+    1466
+  ],
+  "measured_type": "flat multi-label",
+  "checks": {
+    "train_items_labelled_>=90%": true,
+    "long_tail_items_labelled_>=90%": true
+  },
+  "fuse_mask_size": 3661
+}

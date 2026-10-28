@@ -1,0 +1,106 @@
+{
+ "signflip_vs_exact": {
+  "checks": 9,
+  "failures": 0,
+  "examples": [],
+  "details": [
+   "n=6 p=0.2827 exact=0.2812",
+   "n=6 p=0.4058 exact=0.4062",
+   "n=6 p=0.0626 exact=0.0625",
+   "n=9 p=0.3277 exact=0.3281",
+   "n=9 p=0.7513 exact=0.7500",
+   "n=9 p=0.2583 exact=0.2578"
+  ]
+ },
+ "holm_definition": {
+  "checks": 20,
+  "failures": 0,
+  "examples": [],
+  "details": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ]
+ },
+ "noninferiority": {
+  "checks": 3,
+  "failures": 0,
+  "examples": [],
+  "details": [
+   "factor 1.0",
+   "factor 0.995",
+   "factor 0.97"
+  ]
+ },
+ "bootstrap_coverage": {
+  "checks": 1,
+  "failures": 0,
+  "examples": [],
+  "details": [
+   "coverage 0.933 of nominal 0.95"
+  ]
+ },
+ "test_locked": {
+  "checks": 6,
+  "failures": 0,
+  "examples": [],
+  "details": [
+   "amazon-book/2026",
+   "amazon2018-grocery/2026",
+   "ml-1m/1",
+   "ml-1m/2",
+   "ml-1m/3",
+   "yelp2018/2026"
+  ]
+ },
+ "no_test_rows": {
+  "checks": 6,
+  "failures": 0,
+  "examples": [],
+  "details": [
+   "amazon-book/2026",
+   "amazon2018-grocery/2026",
+   "ml-1m/1",
+   "ml-1m/2",
+   "ml-1m/3",
+   "yelp2018/2026"
+  ]
+ },
+ "sealed_hash_recorded": {
+  "checks": 6,
+  "failures": 0,
+  "examples": [],
+  "details": [
+   "amazon-book/2026",
+   "amazon2018-grocery/2026",
+   "ml-1m/1",
+   "ml-1m/2",
+   "ml-1m/3",
+   "yelp2018/2026"
+  ]
+ },
+ "validation_halves": {
+  "checks": 6,
+  "failures": 0,
+  "examples": [],
+  "details": [
+   "amazon-book/2026",
+   "amazon2018-grocery/2026",
+   "ml-1m/1",
+   "ml-1m/2",
+   "ml-1m/3",
+   "yelp2018/2026"
+  ]
+ },
+ "confirmation_locked": {
+  "checks": 1,
+  "failures": 0,
+  "examples": [],
+  "details": [
+   "amazon2018-grocery/2026"
+  ]
+ }
+}

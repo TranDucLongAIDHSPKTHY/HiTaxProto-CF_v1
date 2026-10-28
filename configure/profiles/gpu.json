@@ -1,0 +1,7 @@
+{
+  "device": "cuda",
+  "gpu_id": 0,
+  "hardware_target": "NVIDIA RTX 4060 Ti 16GB",
+  "dtype": "float32",
+  "result_eligible": true
+}

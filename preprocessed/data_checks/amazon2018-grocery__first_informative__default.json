@@ -1,0 +1,40 @@
+{
+  "dataset": "amazon2018-grocery",
+  "split_seed": 2026,
+  "policy": "first_informative",
+  "kindle": null,
+  "release_of_item": {
+    "2018": 39473,
+    "none": 31
+  },
+  "kindle_paths_dropped_items": null,
+  "yelp_unmatched_titles": null,
+  "share_train_items_with_valid_label": 0.9991895040778076,
+  "share_long_tail_items_with_valid_label": 0.9990473922362467,
+  "share_long_tail_items_with_informative_label": 0.9990473922362467,
+  "labels_removed_by_reduction": 0,
+  "labels_lifted": 117,
+  "labels_dropped": 1,
+  "lift_rounds": 8,
+  "valid_nodes_K": 1005,
+  "taxonomy_nodes": 1137,
+  "nodes_with_more_than_one_parent": 0,
+  "max_depth": 11,
+  "mean_valid_labels_per_train_item": 0.9991895040778076,
+  "share_multilabel_train_items": 0.0,
+  "node_size_quantiles_25_50_75": [
+    5.0,
+    13.0,
+    37.0
+  ],
+  "largest_valid_node": [
+    "Grocery & Gourmet Food > Beverages > Coffee, Tea & Cocoa > Coffee > Single-Serve Capsules & Pods",
+    1673
+  ],
+  "measured_type": "forest of trees (full-path identity)",
+  "checks": {
+    "train_items_labelled_>=90%": true,
+    "long_tail_items_labelled_>=90%": true
+  },
+  "fuse_mask_size": 39450
+}

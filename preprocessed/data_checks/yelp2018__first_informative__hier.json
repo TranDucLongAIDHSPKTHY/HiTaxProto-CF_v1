@@ -1,0 +1,50 @@
+{
+  "dataset": "yelp2018",
+  "split_seed": 2026,
+  "policy": "first_informative",
+  "kindle": null,
+  "release_of_item": {
+    "2018": 36720,
+    "none": 1328
+  },
+  "kindle_paths_dropped_items": null,
+  "yelp_unmatched_titles": {
+    "Ethnic Food": 316,
+    "Contractors": 84,
+    "Dry Cleaning & Laundry": 64,
+    "Arabian": 17,
+    "Leisure Centers": 13,
+    "Ethnic Grocery": 7,
+    "Landscape Architects": 6,
+    "Golf Equipment Shops": 4,
+    "Spin Classes": 2
+  },
+  "share_train_items_with_valid_label": 0.9650967199327166,
+  "share_long_tail_items_with_valid_label": 0.9515803013597942,
+  "share_long_tail_items_with_informative_label": 0.9515803013597942,
+  "labels_removed_by_reduction": 60817,
+  "labels_lifted": 145,
+  "labels_dropped": 1,
+  "lift_rounds": 2,
+  "valid_nodes_K": 835,
+  "taxonomy_nodes": 984,
+  "nodes_with_more_than_one_parent": 14,
+  "max_depth": 4,
+  "mean_valid_labels_per_train_item": 2.3955004205214467,
+  "share_multilabel_train_items": 0.672597771236333,
+  "node_size_quantiles_25_50_75": [
+    6.0,
+    19.0,
+    65.0
+  ],
+  "largest_valid_node": [
+    "tradamerican",
+    3319
+  ],
+  "measured_type": "DAG (official Yelp hierarchy), multi-label",
+  "checks": {
+    "train_items_labelled_>=90%": true,
+    "long_tail_items_labelled_>=90%": true
+  },
+  "fuse_mask_size": 36720
+}

@@ -1,0 +1,6 @@
+{
+  "device": "cpu",
+  "dtype": "float64",
+  "purpose": "unit tests and smoke checks",
+  "result_eligible": false
+}
